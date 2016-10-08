@@ -1,0 +1,24 @@
+{
+  "name": "clos",
+  "version": "1.0.0",
+  "description": "Just styles",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oorococo/clos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oorococo/clos/issues"
+  },
+  "homepage": "https://github.com/oorococo/clos#readme",
+  "devDependencies": {
+    "node-sass": "^3.10.1",
+    "normalize.css": "^5.0.0"
+  }
+}

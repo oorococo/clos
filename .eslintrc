@@ -1,0 +1,44 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "classes": true,
+      "jsx": true
+    },
+    "sourceType": "module"
+  },
+  "rules": {
+    "import/extensions": 0,
+    "semi": [
+      2,
+      "never"
+    ],
+    "indent": [
+      2,
+      4
+    ],
+    "react/jsx-indent": [
+      2,
+      4
+    ],
+    "react/jsx-indent-props": [
+      2,
+      4
+    ],
+    "import/no-extraneous-dependencies": 0,
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn"
+  }
+}
