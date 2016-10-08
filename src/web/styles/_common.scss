@@ -1,0 +1,108 @@
+
+body {
+    font: 14px/1.5 gotham_bookregular, "Gotham Book", "GothamBook", "Helvetica Neue", Helvetica, Arial, sans-serif, "Hiragino Sans GB", "Microsoft YaHei";;
+    color: #2d2d34;
+    background-color: #ffffff;
+}
+
+////////////////////
+
+html, body, #root, [data-reactroot], .app-ctn, .page-transition-ctn, .page-ctn {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.module-ctn {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/////////////////////////////
+.page-ctn-left {
+    position: absolute;
+    padding-top: 40px;
+}
+
+.page-ctn-left-enter {
+    z-index: 999;
+    transform: translateX(100%);
+    transition: all .2s ease-in;
+}
+
+.page-ctn-left-enter.page-ctn-left-enter-active {
+    transform: translateX(0);
+}
+
+.page-ctn-left-leave {
+    z-index: 998;
+    transition: all .4s ease-in;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.page-ctn-left-leave.page-ctn-left-leave-active {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/////////////////////
+.page-ctn-right {
+    position: absolute;
+    padding-top: 40px;
+}
+
+.page-ctn-right-enter {
+    z-index: 999;
+    transform: translateX(-100%);
+    transition: all .2s ease-in;
+}
+
+.page-ctn-right-enter.page-ctn-right-enter-active {
+    transform: translateX(0);
+}
+
+.page-ctn-right-leave {
+    z-index: 998;
+    transition: all .4s ease-in;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.page-ctn-right-leave.page-ctn-right-leave-active {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.link-active {
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.wander-topbar {
+    display: flex;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid rgba(#000, 0.12);
+    a {
+        display: block;
+        padding: 4px 10px;
+        color: #5d5d5d;
+        text-decoration: none;
+        &.active {
+            background-color: rgba(#000, 0.1);
+        }
+    }
+}
+
+.topbar {
+
+}
+
+.home-slider-1 {
+    display: flex;
+    color: #433;
+    background-color: #f2f2f2;
+    line-height: 1.8;
+}
